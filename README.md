@@ -40,5 +40,12 @@ Clone the tutorial repository from https://github.com/allisterb/bob2021. You sho
 Open the "Introduction to F#" notebook in the examples folder of this repo.
 This a F# language tutorial notebook from the .NET Interactive [repo](https://github.com/dotnet/interactive/tree/main/samples/notebooks/fsharp). If you're unfamiliar with F# you can go through the notebook which demonstrates some F# language features. Click on the green run arrow to the left of each cell to run the code for that cell.
 
+### Caveats
+* On Windows you might see a notification that you need to trust the notebook:
+![trust](https://trafficcv.s3.us-east-2.amazonaws.com/nbtrust.png)
+Click the *Trust* button to trust the opened notebook.
 
+* Opening notebooks using the regular VS Code file or directory browser doesn't seem to work as that will just bring up the notebook JSON. You must use the Control Palette notebook commands to open notebook files.
+
+### Finally
 And that's it! If you have any problems installing a local environment I'll also provide instructions for setting up a completely remote environment using free cloud services.
