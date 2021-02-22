@@ -33,7 +33,12 @@ You can access the marketplace directly inside Visual Studio Code from the `Exte
 Once these three things are installed, you have everything you need for the tutorial.
 
 ### Tutorial Repository
-Clone the tutorial repository from https://github.com/allisterb/bob2021. You shoud then be able to open any F# notebook in the tutorial repository from inside Visual Studio Code.
-![VS Code Notebook](https://trafficcv.s3.us-east-2.amazonaws.com/screen3.png)
+Clone the tutorial repository from https://github.com/allisterb/bob2021. You shoud then be able to open any F# notebook in the tutorial repository from inside Visual Studio Code. Press Ctrl-Shift-P to bring up the VS Code Palette then select ".NET Interactive: Open notebook"
 
-If you have any problems installing a local environment I'll also provide instructions for setting up a completely remote environment using free cloud services.
+![Open Code Notebook](https://trafficcv.s3.us-east-2.amazonaws.com/opennb.png)
+
+Open the "Introduction to F#" notebook in the examples folder of this repo.
+This a F# language tutorial notebook from the .NET Interactive [repo](https://github.com/dotnet/interactive/tree/main/samples/notebooks/fsharp). If you're unfamiliar with F# you can go through the notebook which demonstrates some F# language features. Click on the green run arrow to the left of each cell to run the code for that cell.
+
+
+And that's it! If you have any problems installing a local environment I'll also provide instructions for setting up a completely remote environment using free cloud services.
