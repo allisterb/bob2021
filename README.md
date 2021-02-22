@@ -45,7 +45,7 @@ This a F# language tutorial notebook from the .NET Interactive [repo](https://gi
 ![trust](https://trafficcv.s3.us-east-2.amazonaws.com/nbtrust.png)
 Click the *Trust* button to trust the opened notebook.
 
-* Opening notebooks using the regular VS Code file or directory browser doesn't seem to work as that will just bring up the notebook JSON. You must use the Control Palette notebook commands to open notebook files.
+* Opening notebooks using the regular VS Code file or directory browser on Linux doesn't seem to work as that just brings up the notebook JSON. On Linux you must use the Control Palette "Open .NET Interactive notebook" command to open notebook files.
 
-### Finally
+### Finally...
 And that's it! If you have any problems installing a local environment I'll also provide instructions for setting up a completely remote environment using free cloud services.
