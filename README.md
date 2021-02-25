@@ -18,5 +18,5 @@ Alteratively if you have Python 3 installed you can install Jupyter Notebooks an
 
 ### MyBinder
 You can try to run the repo on the free mybinder.org service here: 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/allisterb/bob2021/HEAD). 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/allisterb/bob2021/HEAD) [![Join the chat at https://gitter.im/allisterb-bob2021/community](https://badges.gitter.im/allisterb-bob2021/community.svg)](https://gitter.im/allisterb-bob2021/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge). 
 In testing this service was very slow to launch so YMMV.
