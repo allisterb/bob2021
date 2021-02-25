@@ -1,51 +1,22 @@
 # bob2021
 This repo contains slides and examples for my [BOB2021 tutorial](https://bobkonf.de/2021/beharry.html) *Sylvester: computer-based math via F# meta-programming*.
 
-
 ## Requirements
-Our main environment will be Visual Studio Code running .NET Interactive [polyglot notebooks](https://github.com/dotnet/interactive/blob/main/docs/polyglot.md). This is a cross-platform desktop notebook environment for Windows, Linux, and Mac that offers several advantages over Jupyter Notebooks like the ability to use multiple languages including JavaScript for cells and sharing data between cells in different languages. The following instructions detail how to get the tutorial environment setup on your local machine. The main components required are .NET 5, Visual Studio Code, and the .NET Interactive extension for Visual Studio Code.
+Our main environment will be Jupyter Notebooks using the IFSharp kernel. There are 3 ways to setup the tutorial environment:
 
+### Docker
+In this repo there is a script `run.sh` that will download a Docker image and start a Jupyter Notebooks container with the tutorial notebooks that you can open with your browser. 
 
-### .NET 5 
-The latest version of Microsoft's open-source cross-platform development platform. You can download the latest version of .NET 5 [here](https://dotnet.microsoft.com/download/dotnet/5.0). Installation instructions for Windows, Debian, Ubuntu, RedHat and other Linux package managers are provided, and there are also binary releases for Arm32/64 and x86/64. Installing from binary releases is pretty simple and will make sure you have the latest release. For Windows you can just run the provided installer. For Linux the process is:
-* Download the binary archive for your arch e.g. https://download.visualstudio.microsoft.com/download/pr/cd11b0d1-8d79-493f-a702-3ecbadb040aa/d24855458a90944d251dd4c68041d0b7/dotnet-sdk-5.0.103-linux-arm.tar.gz
-for ARM 32bit. 
-* Create a folder called `.dotnet` in your `$HOME` and expand the contents of the archive there.
-* Add the following 2 entries to your `~/.basrhc`:
-````
-    export DOTNET_ROOT=$HOME/.dotnet 
-    export PATH=$PATH:$HOME/.dotnet
-````
-* Reload your login shell config with `source ~/.bashrc`. Type `dotnet --version` and it should print the version of .NET 5 available e.g. `5.0.103`.
+### Manual install
+Alteratively if you have Python 3 installed you can install Jupyter Notebooks and the IfSharp kernel manually:
+* (Recommended) Create a Python 3 `venv` to isolate dependencies: `python3 -m venv bob2021` and activate it e.g. `source bob2021/bin/activate` on Linux or on Windows `bob2021\Scripts\activate`.
+* Run `pip install jupyter` to install Jupyter in your environment or see the official instructions [here](https://jupyter.readthedocs.io/en/latest/install/notebook-classic.html).
+* Download the latest IfSharp kernel release archive [here](https://github.com/fsprojects/IfSharp/releases/)
+* Expand the archive and on Windows execute `ifsharp.exe` or on Linux `mono ifsharp.exe` in your Python environment. The official instructions for installing IfSharp are [here](https://github.com/fsprojects/IfSharp).
+* With everything installed run `jupyter notebook .` in this repository's root folder.
+* Jupyter Notebooks should launch and you should see this repository folder. Click on the `FSharp_Jupyter_Notebooks.ipynb` to launch a test F# notebook.
 
-### Visual Studio Code
-Installing VS Code is a similar process to installing .NET 5. There may be older versions available in your package manager but you can download the latest release as a binary archive from https://code.visualstudio.com/#alt-downloads. On Windows you can just run the provided installer. For Linux:
-* Download the latest binary release for your arch e.g. https://code.visualstudio.com/docs/?dv=linuxarmhf for ARM 32bit. 
-* Expand the archive in your `$HOME` folder. You will have a folder like `VSCode-linux-armhf`.
-* Run `./code` from there. You should see the Visual Studio Code welcome screen.
-![VS Code](https://trafficcv.s3.us-east-2.amazonaws.com/screen1.png)
-
-
-### .NET Interactive extension for Visual Studio Code
-Install the extension from the VS Code [marketplace](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.dotnet-interactive-vscode).
-You can access the marketplace directly inside Visual Studio Code from the `Extensions` button. ![VS Code Extensions](https://trafficcv.s3.us-east-2.amazonaws.com/screen2.png) on the extreme left of the VS Code main window.
-
-Once these three things are installed, you have everything you need for the tutorial.
-
-### Tutorial Repository
-Clone the tutorial repository from https://github.com/allisterb/bob2021. You shoud then be able to open any F# notebook in the tutorial repository from inside Visual Studio Code. Press Ctrl-Shift-P to bring up the VS Code Palette then select ".NET Interactive: Open notebook"
-
-![Open Code Notebook](https://trafficcv.s3.us-east-2.amazonaws.com/opennb.png)
-
-Open the "Introduction to F#" notebook in the examples folder of this repo.
-This a F# language tutorial notebook from the .NET Interactive [repo](https://github.com/dotnet/interactive/tree/main/samples/notebooks/fsharp). If you're unfamiliar with F# you can go through the notebook which demonstrates some F# language features. Click on the green run arrow to the left of each cell to run the code for that cell.
-
-### Caveats
-* On Windows you might see a notification that you need to trust the notebook:
-![trust](https://trafficcv.s3.us-east-2.amazonaws.com/nbtrust.png)
-Click the *Trust* button to trust the opened notebook.
-
-* Opening notebooks using the regular VS Code file or directory browser on Linux doesn't seem to work as that just brings up the notebook JSON. On Linux you must use the Control Palette "Open .NET Interactive notebook" command to open notebook files.
-
-### Finally...
-And that's it! If you have any problems installing a local environment I'll also provide instructions for setting up a completely remote environment using free cloud services.
+### MyBinder
+You can try to run the repo on the free mybinder.org service here: 
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/allisterb/bob2021/HEAD). 
+In testing this service was very slow to launch so YMMV.

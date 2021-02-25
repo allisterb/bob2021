@@ -1,0 +1,5 @@
+#r "../lib/net45/FSharp.Interop.Dynamic.dll"
+#r "../lib/net45/CsvHelper.dll"
+#r "../lib/net45/Sylvester.Data.dll"
+#r "../lib/net45/Sylvester.DataFrame.dll"
+#r "../lib/net45/Dynamitey.dll"
