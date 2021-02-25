@@ -2,7 +2,7 @@
 This repo contains slides and examples for my [BOB2021 tutorial](https://bobkonf.de/2021/beharry.html) *Sylvester: computer-based math via F# meta-programming*.
 
 ## Requirements
-Our main environment will be Jupyter Notebooks using the IFSharp kernel. There are 3 ways to setup the tutorial environment:
+Our main environment will be Jupyter Notebooks using the IFSharp kernel. There are 2 ways to setup the tutorial environment:
 
 ### Docker
 In this repo there is a script `run.sh` that will download a Docker image and start a Jupyter Notebooks container with the tutorial notebooks that you can open with your browser. 
@@ -15,8 +15,3 @@ Alteratively if you have Python 3 installed you can install Jupyter Notebooks an
 * Expand the archive and on Windows execute `ifsharp.exe` or on Linux `mono ifsharp.exe` in your Python environment. The official instructions for installing IfSharp are [here](https://github.com/fsprojects/IfSharp).
 * With everything installed run `jupyter notebook .` in this repository's root folder.
 * Jupyter Notebooks should launch and you should see this repository folder. Click on the `FSharp_Jupyter_Notebooks.ipynb` to launch a test F# notebook.
-
-### MyBinder
-You can try to run the repo on the free mybinder.org service here: 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/allisterb/bob2021/HEAD). 
-In testing this service was very slow to launch so YMMV.
