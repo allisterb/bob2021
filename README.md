@@ -27,6 +27,8 @@ There are two environments we can use for this tutorial:
 * Jupyter Notebooks using the IFSharp kernel
 * Visual Studio Code
 
+**Note that you only need to have one of these!**
+
 ### Jupyter Notebooks
 __Using Docker__
 In this repo there is a script `run.sh` that will download a Docker image and start a Jupyter Notebooks container with the tutorial notebooks that you can open with your browser.
@@ -41,7 +43,7 @@ Alteratively if you have Python 3 installed you can install Jupyter Notebooks an
 
 ![nb](https://trafficcv.s3.us-east-2.amazonaws.com/bob2021nb.png)
 
-### Visual Studio Code
+### Visual Studio Code (Alternative)
 If you already have Visual Studio Code installed then you can skip to installing the F# extension Ionide. If not then installing VS Code is a similar process to installing .NET. There may be older versions available in your package manager but you can download the latest release as a binary archive from https://code.visualstudio.com/#alt-downloads. On Windows you can just run the provided installer. For Linux:
 * Download the latest binary release for your arch e.g. https://code.visualstudio.com/docs/?dv=linuxarmhf for ARM 32bit. 
 * Expand the archive in your `$HOME` folder. You will have a folder like `VSCode-linux-armhf`.
